@@ -1,0 +1,9 @@
+From: Valid, Frozen, Missing
+To: Valid, Missing, SameAsFrom
+Amount: Normal, Zero, OverBalance, OverLimit
+Currency: Same, Different
+Limit: Open, Exhausted
+
+IF [From] = "Missing" THEN [To] <> "SameAsFrom" AND [Amount] IN {"Zero", "Normal"} AND [Limit] = "Open";
+IF [Amount] = "OverLimit" THEN [Limit] = "Open";
+IF [Amount] = "Zero" THEN [Currency] = "Same";
