@@ -1,0 +1,15 @@
+﻿From	To	Amount	Currency	Limit
+Frozen	Valid	Zero	Same	Open
+Valid	Valid	OverBalance	Different	Exhausted
+Frozen	Missing	OverBalance	Different	Open
+Valid	Missing	Zero	Same	Exhausted
+Valid	SameAsFrom	OverBalance	Same	Open
+Missing	Missing	Normal	Same	Open
+Frozen	SameAsFrom	OverLimit	Different	Open
+Frozen	Valid	Normal	Different	Exhausted
+Valid	SameAsFrom	Zero	Same	Exhausted
+Valid	Valid	OverLimit	Same	Open
+Valid	Missing	OverLimit	Different	Open
+Missing	Valid	Zero	Same	Open
+Valid	SameAsFrom	Normal	Same	Exhausted
+Missing	Missing	Normal	Different	Open
